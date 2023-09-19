@@ -30,8 +30,10 @@ class ScriptingDictionary
             arr.Push(keys[A_Index - 1])
          Return arr
       }
-      else
+      else if (this._dict_.Exists(key))
          Return this._dict_.Item(key)
+      else
+         Return ""
    }
    
    _NewEnum() {
