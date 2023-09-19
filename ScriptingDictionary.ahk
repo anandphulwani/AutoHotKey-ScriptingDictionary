@@ -69,4 +69,8 @@ class ScriptingDictionary
    HasKey(key) {
       Return !!this._dict_.Exists(key)
    }
+
+   GetKeys() {
+      Return this._dict_.Keys
+   }
 }
